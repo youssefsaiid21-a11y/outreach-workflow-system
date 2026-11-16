@@ -1,0 +1,94 @@
+# SWAT team orchestration files
+.swat/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Databases
+*.db
+*.db-shm
+*.db-wal
+outreach.db.bak
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Logs and temp files
+logs/
+.tmp/
+*.log
+
+# OAuth tokens and per-user credentials (NEVER commit)
+token_cache.json
+token_cache_*.json
+tokens/
+credentials.json
+token.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local data dumps (used for testing, never deploy)
+local_data.json
+
+# Watchdog runtime state (regenerated on each tick)
+watchdog_state.json
+watchdog_cooldowns.json
+
+# Build artifacts (alembic versions ARE tracked, but not __pycache__ inside)
+alembic/__pycache__/
+
+# Local development tool state (Claude Code, Playwright, etc.)
+.claude/
+.playwright-mcp/
+
+# Debug screenshots / scratch images (never tracked)
+*.jpeg
+*.jpg
+*.png
+!dashboard/**/*.png
+test-screenshots/
+
+# Private operations and local editor state
+.vscode/
+CLAUDE.md
+SESSION_HANDOFF_*.md
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Local state never belongs in a portfolio snapshot
+.env
+.env.local
+.env.production
+node_modules/
+.venv/
+__pycache__/
+.pytest_cache/
+*.db
+*.sqlite
+*.sqlite3
+*.tsbuildinfo
+.DS_Store
